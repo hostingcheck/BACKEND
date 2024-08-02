@@ -19,7 +19,7 @@ app.use(limiter);
 
 // CORS configuration
 const corsOptions = {
-  origin: process.env.https://frontend-132j.onrender.com,
+  origin: process.env.FRONTEND_URL,
   optionsSuccessStatus: 200
 };
 app.use(cors(corsOptions));
