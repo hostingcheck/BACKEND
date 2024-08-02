@@ -1,6 +1,10 @@
 const express = require('express');
-const cors = require('cors');
-require('dotenv').config();
+const corsOptions = {
+  origin: process.env.https://frontend-132j.onrender.com,
+  optionsSuccessStatus: 200
+};
+
+app.use(cors(corsOptions));
 
 const app = express();
 const PORT = process.env.PORT || 5000;
